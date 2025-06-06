@@ -1,0 +1,5 @@
+config SHIELD_PINKEY_LEFT
+    def_bool $(shields_list_contains,pinkey_left)
+
+config SHIELD_PINKEY_RIGHT
+    def_bool $(shields_list_contains,pinkey_right)
