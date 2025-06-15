@@ -26,37 +26,37 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp F  &kp P  &kp B      &kp J      &kp L  &kp U      &kp Y    &kp BSPC
-&kp A  &kp R  &kp S  &kp T  &kp G      &kp M      &kp N  &kp E      &kp I    &kp O
-&kp Z  &kp X  &kp C  &kp D  &kp V      &kp K      &kp H  &kp COMMA  &kp DOT  &kp RET
-                     &mo 1  &kp LSHFT  &kp SPACE  &mo 2
+&kp ESC     &kp Q   &kp W   &kp E   &kp R      &kp T   &kp Y   &kp U   &kp I   &kp BSPC
+&kp LSHFT   &kp A   &kp S   &kp D   &kp F      &kp G   &kp H   &kp J   &kp K   &kp L
+&kp LCTRL   &kp Z   &kp X   &kp C   &kp V      &kp B   &kp N   &kp M   &kp O   &kp P
+                        &kp SPACE   &kp LALT   &kp ENTER  &to 1
             >;
         };
 
         left {
             bindings = <
-&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
-&none     &kp LBKT  &kp LBRC  &kp LPAR  &kp DQT    &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON  &kp SEMI
-&none     &kp RBKT  &kp RBRC  &kp RPAR  &kp SQT    &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
-                              &trans    &trans     &trans     &trans
+&trans   &kp N7   &kp N8   &kp N9   &kp N0         &kp COMMA   &kp DOT    &kp LBKT    &kp RBKT    &trans
+&trans   &kp N4   &kp N5   &kp N6   &kp MINUS      &kp FSLH    &kp SEMI   &kp GRAVE   &kp PSCRN   &kp DEL
+&trans   &kp N1   &kp N2   &kp N3   &kp EQUAL      &kp BSLH    &kp APOS   &kp CAPS    &kp RGUI    &kp TAB
+                            &to 0   &trans         &trans      &to 2
             >;
         };
 
         right {
             bindings = <
-&kp N1     &kp N2    &kp N3    &kp N4     &kp N5   &kp N6     &kp N7    &kp N8     &kp N9     &kp N0
-&kp LSHFT  &kp LALT  &kp LGUI  &kp LCTRL  &none    &kp PSCRN  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-&none      &none     &none     &none      &kp DEL  &kp INS    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
-                               &trans     &trans   &trans     &trans
+&trans   &kp F9   &kp F10  &kp F11  &kp F12     &kp BT_SEL 0   &kp BT_CLR   &kp UP     &kp PG_UP   &studio_unlock
+&trans   &kp F5   &kp F6   &kp F7   &kp F8      &kp BT_SEL 1   &kp LEFT     &kp DOWN   &kp RIGHT   &kp DEL
+&trans   &kp F1   &kp F2   &kp F3   &kp F4      &kp BT_SEL 2   &kp HOME     &kp END    &kp PG_DN   &kp RGUI
+                           &to 0    &trans      &trans         &kp INS
             >;
         };
 
         both {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &studio_unlock  &none   &none   &none  &none  &none
-&kp F5  &kp F6   &kp F7   &kp F8   &bt BT_CLR_ALL  &none   &none   &none  &none  &none
-&kp F9  &kp F10  &kp F11  &kp F12  &none           &none   &none   &none  &none  &none
-                          &trans   &trans          &trans  &trans
+&none   &none   &none   &none   &none      &none   &none   &none   &none   &none
+&none   &none   &none   &none   &none      &none   &none   &none   &none   &none
+&none   &none   &none   &none   &none      &none   &none   &none   &none   &none
+                        &to 0   &none      &none   &none
             >;
         };
     };
